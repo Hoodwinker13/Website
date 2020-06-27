@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clean Mask</title>
+        <style>
+            .topnav{
+                    overflow:hidden;
+                    background-color: #010b13;
+                    position:sticky;
+                    top:0;
+                    z-index: 2;
+                    margin-top:-50px;
+                }
+                .topnav .title a{
+                    float: left;
+                    display: block;
+                    color: white;
+                    padding: 14px 16px;
+                    font-size: 30px;
+                    text-align: center;
+                    overflow:hidden;
+                    text-decoration:none;
+                }
+                .topnav .texts a{
+                    float:left;
+                    display:block;
+                    color:white;
+                    padding:14px 16px;
+                    font-size:20px;
+                    text-align:center;
+                    overflow:hidden;
+                    text-decoration:none;
+                }
+                .topnav .texts a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+                .topnav .title a:hover{
+                    background-color:#010b13;
+                    color:white;
+                }
+                .topnav a.active {
+                    background-color: #2196F3;
+                    color: white;
+                }
+                .topnav .search-container button:hover {
+                    background: #ccc;
+                }
+                .header a{
+                    color: black;
+                }
+                .glass{
+                    margin-top: -2px;
+                }
+                .date{
+                    margin-top:50px;
+                    color:white;
+                    text-align:right;
+                }
+                .caption{
+                    color:white;
+                    font-size:20px;
+                }
+                .caption2{
+                    color:white;
+                    text-align:center;
+                }
+                .ui-widget{
+                    float:right;
+                    margin-top:-50px;
+                    margin-right:0px;
+                    position:sticky;
+                    top:12;
+                    z-index: 4;
+                }
+                .image1{
+                    float:left;
+                    color:white;
+                    margin-left:125px;
+                }
+                .image2{
+                    float:right;
+                    color:white;
+                    margin-right:125px;
+                }
+                .text{
+                    width: 1000px;
+                    float:left;
+                    color:white;
+                    margin-left:160px;
+                    font-size:20px;
+                }
+                .materials{
+                    width: 1000px;
+                    float:left;
+                    margin-left:160px;
+                    color:white;
+                }
+                .materials a{
+                    text-decoration:none; 
+                    color: lightblue; 
+                }
+                .video video{
+                    text-align: center;
+                    margin-left:500px;
+                }
+                #select{
+            color:#010b13;
+            background-image: linear-gradient(to bottom, #808080, #FFFFFF);
+        }
+        .title{
+            width:1200px;
+            color:white;
+        }
+        </style>
+        </head>
+        <body style = "margin:0px; background-color:#031829;">               
+           
+        <div class = "topnav">
+            <div class = "title"><a href = ".\index">Clean Mask</a></div>
+            <div class ="texts">
+                    <a href=".\about">About</a>
+        
+                    <a href=".\procedures">Procedure</a>
+               
+                    
+                    <a href=".\setup" id = "select">Setup</a>
+                    <a href=".\data">Data</a>
+                    
+        <a href="./data_input">Data Input</a>
+                </div>
+    
+        </div>
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
+        <script type="text/javascript" src="{{url_for('static', filename='js/search_out.js')}}"> </script> 
+        <div class= "ui-widget"><input type = "text" id = "name" placeholder="mask name" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'mask name'"><input type = "submit" id="submit"/></div>
+    <div class = "date"><p style = "margin-right:20px;">(Version: May 9, 2020)</p></div>
+    <center>
+        <div style="width: 1000">
+        <p style = "color:white; font-size:20px;">
+<left>This document describes the capabilities of the Ju Li’s Lab (in Department of Nuclear Science
+and Engineering, MIT) to perform tests on    filtration materials/devices (preferably with low air
+resistance, including HVAC filters, air purifiers, face masks and respirators), for filtration
+efficiency and pressure drop. </left><br>
+        </p>
+        </div>
+    </center>
+    <h1 style= "color:white; margin-left: 50px;"><strong><em><u>Equipment: </u></em></strong></h1>
+    <center><img src="{{url_for('static', filename='img/MaskExperiment1.PNG')}}" alt = "Image for designing experiment" width = 1000>
+<br><div class = "caption"><p>a) Whole apparutus</p></div></center>
+<center><figure><div class = "image1"><img src = "{{url_for('static', filename='img/MaskExperiment2.PNG')}}" alt = "Image for designing experiment" width = 500><figcaption><p style = "font-size:20px">(b) Filter/mask test</p></figcaption></div></figure>
+
+<figure><div class = "image2"><img src = "{{url_for('static', filename='img/MaskExperiment3.PNG')}}" alt = "Image for designing experiment" width = 500><figcaption><p style = "font-size:20px">(c) Cartridge test</p></figcaption></div></figure></center>  
+<div class = "materials">
+    <h1 style = "color:white;"><em><strong><u>Materials:</u></strong></em></h1>
+    <h3>Air duct with driving fan</h3>
+    <ul>
+        <li><a href ="https://www.amazon.com/gp/product/B07SN5PNH3/ref=ox_sc_act_title_1?smid=A3I2VACYSJR5AQ&psc=1"><u>TerraBloom 4" duct fan</u></a></li>
+        <li><a href = "https://www.amazon.com/gp/product/B071LHCFZ8/ref=ox_sc_act_image_4?smid=A2AW0W4FKP16S5&psc=1"><u>Ventilation ducting</u></a></li>
+        <li><a href = "https://item.taobao.com/item.htm?id=570475379648&_u=9ulp7bme3bf"><u>Testing duct</u></a></li>
+        <li><a href = "https://item.taobao.com/item.htm?id=574497858734&_u=9ulp7bmb983"><u>Pre-filter</u></a></li>
+        <li><a href="https://www.mcmaster.com/5415K34"><u>Clamp</u></a></li>
+    </ul>
+    <h3><strong><em>Particle generator</em></strong> for KCl aerosol with a speed controlled pump (using ambient particles do not need a generator)</h3>
+    <ul>
+        <li><a href="http://chtechusa.com/products_tag_lg_collison-nebulizer.phpBGI"><u> Collision Nebulizer</u></a></li>
+        <li>Peristaltic Pump
+            <ul>
+            <li><a href="https://www.amazon.com/gp/product/B07Q46LBJN/ref=ox_sc_act_title_2?smid=A3KJQPNPKXSYP&psc=1"><u>Main device</u></a></li>
+            <li><a href="http://www.jihpump.com/html/article/462.html">Controller</a></li>
+            <li><a href="https://www.amazon.com/gp/product/B019YS4PSG/ref=ox_sc_act_title_2?smid=A1CYSEWV5K86KD&psc=1"><u>Flow meter</u></a></li>
+            </ul>
+        </li>
+        <li>Connection fittings
+            <ul>
+            <li><a href="https://www.mcmaster.com/5234K26"><u>Latex rubber tubing</u></a></li>
+            <li><a href="https://www.mcmaster.com/5076K31"><u>Clamp</u></a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.sigmaaldrich.com/catalog/product/sial/p9333?lang=en&region=US"><u>KCl</u></a></li>
+    </ul>
+    <h3>Particle concentration measuring</h3>
+    <ul>
+        <li>Main device: <a href = "https://www.tequipment.net/TSI/9306-V2/Particle-Counter/"><u>TSI 9306 optical particle counter(OPC)</u></a></li>
+        <li>Connection fittings
+            <ul>
+                <li><a href = "https://www.mcmaster.com/5392K25"><u>Sampling tubing</u></a></li>
+                <li><a href="https://www.amazon.com/gp/product/B07CGNJ9P8/ref=ox_sc_act_title_1?smid=A2OHI8K6O92MEP&psc=1"><u>Push to connect fittings</u></a></li>
+                <li><a href="https://www.amazon.com/gp/product/B074VBF9C3/ref=crt_ewc_img_dp_1?ie=UTF8&psc=1&smid=A7JAO9VN3M4B8"><u>Pinchcock tubing clamp</u></a></li>
+                <li><a href="https://www.amazon.com/gp/product/B01LX7QKSD/ref=ox_sc_act_title_5?smid=A17NMFB0WQDB5F&psc=1"><u>Silicone tubing</u></a></li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Pressure drop/airflow rate/temperature/relative humidity measuring</h3>
+    <ul>
+        <li>Pressure drop
+            <ul>
+                <li><a href="https://www.mcmaster.com/4125k21"><u>DWYER 475 differential gauge, 0-4,982kPa</u></a></li>
+                <li><a href="https://www.mcmaster.com/5234k42-5234K32"><u>Sampling tubing</u></a></li>
+            </ul>
+        </li>
+        <li>Airflow rate/temperature/relative humidity
+            <ul>
+                <li><a href="https://www.mcmaster.com/1410k15"><u>EXTECH 45158 mini thermo-anemometer</u></a></li>
+            </ul>
+        </li>
+    </ul>
+</div>    
+<div class = "text">
+    <p>
+<br> 
+The air duct is designed to test a small-scale purifier developed by our lab and now modified
+to test small samples of material (50 mm diameter disks), or small air purifier that can build
+an air-tight connection to the air duct.
+    </p>
+    </div>
+    <br><br><br>
+    <div class = "title">
+    <p style="text-align:center; font-size:28px; margin-left:150px;">Demo Video of Experiments</p>
+    <div class = "video">
+        <h2 style="margin-left:200px;">Part 1: Testing Air Duct</h2>
+    <video width="320" height="240" controls>
+        <source src="{{url_for('static', filename='vid/Part1Testingairduct.mp4')}}" type="video/mp4">
+            Your brower does not support the video tag. 
+    </video>
+    <h2 style="margin-left:200px;">Part 2: Filter Installation</h2>
+    <video width="320" height="240" controls>
+        <source src="{{url_for('static', filename='vid/Part2Filterinstallation.mp4')}}" type="video/mp4">
+            Your brower does not support the video tag. 
+    </video>
+    <h2 style="margin-left:200px;">Part 3: Particle Generation (alternative)</h2>
+    <video width="320" height="240" controls>
+        <source src="{{url_for('static', filename='vid/Part3Particlegeneration.mp4')}}" type="video/mp4">
+            Your brower does not support the video tag. 
+    </video>
+    <h2 style="margin-left:200px;">Part 4: Filtration Efficiency</h2>
+    <video width="320" height="240" controls>
+        <source src="{{url_for('static', filename='vid/Part4Efficiencymeasurement.mp4')}}" type="video/mp4">
+            Your brower does not support the video tag. 
+    </video>
+    <h2 style="margin-left:200px;">Part 5: Pressure Drop Measurement</h2>
+    <video width="320" height="240" controls>
+        <source src="{{url_for('static', filename='vid/Part5Pressuredropmeasurement.mp4')}}" type="video/mp4">
+            Your brower does not support the video tag. 
+    </video>
+    <h2 style="margin-left:200px;">Part 6: Air Property & Velocity Measurement</h2>
+    <video width="320" height="240" controls>
+        <source src="{{url_for('static', filename='vid/Part6Airpropertymeasurement.mp4')}}" type="video/mp4">
+            Your brower does not support the video tag. 
+    </video>
+    <h2 style="margin-left:200px;">Part 7: Whole Testing Process Example</h2>
+    <video width="320" height="240" controls>
+        <source src="{{url_for('static', filename='vid/Part7Wholetestingprocessexample.mp4')}}" type="video/mp4">
+            Your brower does not support the video tag. 
+    </video>
+</div>
+</div>
+    </body>
+
+</html>
