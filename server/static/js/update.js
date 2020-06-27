@@ -70,7 +70,7 @@ $(document).ready(function() {
             contentType:false,
             processData:false,
             success: function(data){
-                alert("Please Wait for approval.");
+                alert("Please Wait for approval. It might take up to a few days.");
                 location.reload();
             },
             error:function(data){

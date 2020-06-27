@@ -120,10 +120,12 @@
 </div>
 <p style="font-size:20px; color:white; margin-top: 50px; margin-left: 50px;">
     If you want to contribute to the data set, please enter your tested data with a picture of the mask that was tested.<br>
-    <strong stype = "font-size:20px;">**IMPORTANT**</strong><br>
+    <br><strong stype = "font-size:20px;">**IMPORTANT**</strong><br>
     For any data that doesn't have a result, please put "null" in that category. <br>
     For "Single-pass filtration efficiency" and "Error Bar", round the data to the nearest hundredth digit.<br>
-    For the rest of the data, round it up to the nearest tenth digit.
+    For the rest of the data, round it up to the nearest tenth digit.<br>
+    The first row is an example, you may click on the first row to input the data. <br><br>
+    After the data is approved, you can see your data in the "Data" section. 
 </p>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script type="text/javascript" src="{{url_for('static', filename='js/update.js')}}"></script>
@@ -189,64 +191,84 @@
       </tr>
       <tr style="border: 2px solid; border-collapse: collapse;" >
         <td>
-            <input type="text" id="loading_particles" style="width: 70px;" placeholder="Ambient">
+            <input type="text" id="loading_particles" style="width: 70px;" placeholder="Ambient" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Ambient'">
         </td>
         <td>
-            <input type="text" id="mask_type" style="width: 80px" placeholder="N95">
+            <input type="text" id="mask_type" style="width: 80px" placeholder="N95" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'N95'">
         </td>
         <td>
-            <input type="text" id="name" style="width: 100px" placeholder="3M1860">
+            <input type="text" id="name" style="width: 100px" placeholder="3M1860" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '3M1860'">
         </td>
         <td>
-            <input type="text" id="efficiency_03" style="width: 50px" placeholder="99.87%">
+            <input type="text" id="efficiency_03" style="width: 50px" placeholder="99.87%" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '99.87%'">
         </td>
         <td>
-            <input type="text" id="efficiency_05" style="width: 50px" placeholder="100.00%">
+            <input type="text" id="efficiency_05" style="width: 50px" placeholder="100.00%" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '100.00%'">
         </td>
         <td>
-            <input type="text" id="efficiency_1" style="width: 50px" placeholder="100.00%">
+            <input type="text" id="efficiency_1" style="width: 50px" placeholder="100.00%" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '100.00%'">
         </td>
         <td>
-            <input type="text" id="efficiency_3" style="width: 50px" placeholder="100.00%">
+            <input type="text" id="efficiency_3" style="width: 50px" placeholder="100.00%" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '100.00%'">
         </td>
         <td>
-            <input type="text" id="efficiency_5" style="width: 50px" placeholder="null">
+            <input type="text" id="efficiency_5" style="width: 50px" placeholder="null" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'null'">
         </td>
         <td>
-            <input type="text" id="efficiency_10" style="width: 50px" placeholder="null">
+            <input type="text" id="efficiency_10" style="width: 50px" placeholder="null" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'null'">
         </td>
         <td>
-            <input type="text" id="error_03" style="width: 50px" placeholder="68.75%">
+            <input type="text" id="error_03" style="width: 50px" placeholder="68.75%" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '68.75%'">
         </td>
         <td>
-            <input type="text" id="error_05" style="width: 50px" placeholder="87.48%">
+            <input type="text" id="error_05" style="width: 50px" placeholder="87.48%" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '87.48%'">
         </td>
         <td>
-            <input type="text" id="error_1" style="width: 50px" placeholder="100.00%">
+            <input type="text" id="error_1" style="width: 50px" placeholder="100.00%" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '100.00%'">
         </td>
         <td>
-            <input type="text" id="error_3" style="width: 50px" placeholder= "100.00%">
+            <input type="text" id="error_3" style="width: 50px" placeholder= "100.00%" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '100.00%'">
         </td>
         <td>
-            <input type="text" id="error_5" style="width: 50px" placeholder="100.00%">
+            <input type="text" id="error_5" style="width: 50px" placeholder="100.00%" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '100.00%'">
         </td>
         <td>
-            <input type="text" id="error_10" style="width: 50px" placeholder="null">
+            <input type="text" id="error_10" style="width: 50px" placeholder="null" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'null'">
         </td>
         <td>
-            <input type="text" id="pa" style="width: 50px" placeholder="255.5">
+            <input type="text" id="pa" style="width: 50px" placeholder="255.5" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '255.5'">
         </td>
         <td>
-            <input type="text" id="vair" style="width: 50px" placeholder="0.2">
+            <input type="text" id="vair" style="width: 50px" placeholder="0.2" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '255.5'">
         </td>
         <td>
-            <input type="text" id="t" style="width: 50px" placeholder="23.4">
+            <input type="text" id="t" style="width: 50px" placeholder="23.4" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '23.4'">
         </td>
         <td>
-            <input type="text" id="rh" style="width: 50px" placeholder="20.1">
+            <input type="text" id="rh" style="width: 50px" placeholder="20.1" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '20.1'">
         </td>
         <td>
-            <input type="text" id="test_date" style="width: 100px" placeholder="YYYY.MM.DD">
+            <input type="text" id="test_date" style="width: 100px" placeholder="YYYY.MM.DD" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'YYYY.MM.DD'">
         </td>
         <td>
             <input type = "text" id = "test_city" style = "width:100px">
@@ -258,7 +280,8 @@
             <input type = "text" id = "association" style = "width:100px">
         </td>
         <td>
-            <input type = "text" id = "contact_info" style = "width:100px" placeholder= "someone@email.com">
+            <input type = "text" id = "contact_info" style = "width:100px" placeholder= "someone@email.com" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'someone@email.com'">
         </td>
       </tr>
     </thead>
