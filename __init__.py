@@ -1,11 +1,26 @@
+# def application(environ, start_response):
+#     status = '200 OK'
+#     output = b'Hello World!!'
+
+#     response_headers = [('Content-type', 'text/plain'),
+#                         ('Content-Length', str(len(output)))]
+#     start_response(status, response_headers)
+
+#     return [output]
+
 import os
+import sys
 
 from flask import Flask
 from flask_cors import CORS
 from flask_script import Manager
 
-from main.config import config_by_name
-from main import main_bp
+sys.path.append('/var/www')
+sys.path.append('/var/www/Website')
+sys.path.append('/vaw/www/Website/main')
+
+from config import config_by_name
+from app import main_bp
 
 def create_app(config_name):
     app = Flask(__name__)

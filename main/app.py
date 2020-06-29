@@ -13,7 +13,7 @@ from flask import request
 from flask import render_template
 from flask import redirect
 
-from .config import config_by_name
+from config import config_by_name
 
 from elasticsearch import Elasticsearch
 
