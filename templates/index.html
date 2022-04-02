@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <script type = "text/javascript" src = "http://code.jquery.com/jquery-latest.min.js"> </script>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="rTqA1mAyp0ZpainHOK9peH_Wo810qoyg1nwOuQ48khM" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-signin-client_id" content="330286217274-rggo0fmdmsbtdsjr6pnga9l4870aqcb4.apps.googleusercontent.com">
     <title>Clean Mask</title>
@@ -149,29 +152,51 @@
                 margin-left:1213px;
                 position: absolute;
             }
+            .img-fluid{
+                width: 100%;
+            }
+            .form-inline{
+                float: right;
+            }
     </style>
     </head>
-    <body style="background-color:black">
-        
-<div class = "topnav">
-    <div class = "title">
-    <a href="./index">Clean Mask</a>
-</div>
-    <div class = "texts">
-    <a href="./data_input.html">Data Input</a>
-    <a href="./data.html">Data</a>
-    <a href="./setup.html" >Setup</a>
-    <a href="./procedures.html">Procedure</a>
-    <a href="./about.html">About</a>
-    
+    <body style="background-color:white">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<nav class = "navbar navbar-expand-lg navbar-light bg-light">
+    <a class = "navbar-brand" href = "">Clean Mask</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+        <ul class = "navbar-nav mr-auto">
+            <li class = "nav-item">
+                <a class = "nav-link" href = "./about">About</a>
+            </li>
+            <li class = "nav-item">
+                <a class = "nav-link" href = "./procedures">Procedure</a>
+            </li>
+            <li class = "nav-item">
+                <a class = "nav-link" href = "./setup">Setup</a>
+            </li>
+            <li class = "nav-item">
+                <a class = "nav-link" href = "./data">Data</a>
+            </li>
+            <li class = "nav-item">
+                <a class = "nav-link" href = "./data_input">Data Input</a>
+            </li>
+        </ul>
+        <form class = "form-inline">
+                <div class = "sign-in">
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                </div>
+        </form>
     </div>
-</div>
-<div class = "sign">
-<div class = "sign-in"><div class="g-signin2" data-onsuccess="onSignIn"></div></div></div>
-<a href="https://www.vecteezy.com/free-vector/covid-19" style="color:black">Covid 19 Vectors by Vecteezy</a>
-<div class = "image">
-    <img src= "https://www.linkpicture.com/q/assorted-n95-mask-3992946-300x200.jpg" width = "707" height = "398">
-</div>
+</nav>
+
+<img src = "https://www.linkpicture.com/q/assorted-n95-mask-3992946-300x200.jpg" class = "img-fluid" alt = "Responsive image">
+<a href="https://www.vecteezy.com/free-vector/covid-19" style="color:black ">Covid 19 Vectors by Vecteezy</a>
 <script>function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     if(localStorage['Name'] == null){

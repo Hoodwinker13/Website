@@ -105,6 +105,17 @@
             position:absolute;
             margin-left:1300;
         }
+        .hl{
+            border-top: 1px solid grey;
+            width: 83px;
+            position:absolute;
+            margin-top: -1px;
+            margin-left: 176px;
+            position:sticky;
+            top:63;
+            z-index: 3;
+
+        }
         a{
             color:#FF0000;
         }
@@ -115,9 +126,6 @@
             position:sticky;
             top:12;
             z-index: 4;
-        }
-        h2{
-            color: #B339D4;
         }
         p{
             font-size: 16;
@@ -140,10 +148,8 @@
             height:22;
             width:1000px;
         }
-        hr.solid {
-                border-top: 3px solid #B339D4;
-        }
     </style>
+
     </head>
     <body style="background-color:white; margin:0px;">
         
@@ -151,7 +157,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <nav class = "navbar navbar-expand-lg navbar-light bg-light">
-    <a class = "navbar-brand" href = "./index">Clean Mask</a>
+    <a class = "navbar-brand" href = "./index.html">Clean Mask</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -161,16 +167,16 @@
                 <a class = "nav-link" href = "">About</a>
             </li>
             <li class = "nav-item">
-                <a class = "nav-link" href = "./procedures">Procedure</a>
+                <a class = "nav-link" href = "./procedures.html">Procedure</a>
             </li>
             <li class = "nav-item">
-                <a class = "nav-link" href = "./setup">Setup</a>
+                <a class = "nav-link" href = "./setup.html">Setup</a>
             </li>
             <li class = "nav-item">
-                <a class = "nav-link" href = "./data">Data</a>
+                <a class = "nav-link" href = "./data.html">Data</a>
             </li>
             <li class = "nav-item">
-                <a class = "nav-link" href = "./data_input">Data Input</a>
+                <a class = "nav-link" href = "./data_input.html">Data Input</a>
             </li>
         </ul>
     </div>
@@ -180,45 +186,28 @@
         <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
         <script type="text/javascript" src="{{url_for('static', filename='js/search_out.js')}}"> </script> 
 
-    <br><h2><strong>How good are my masks?</strong></h2><br>
-    <p style = "font-size: 18px;">During the Covid19 pandemic, there are many questions from the public as to what masks are trustworthy. Cleanmask.org aggregates DIY filtration-test hardware, as well as testing data of masks at different
+    <h1>How good is the air filtration efficiency of my N95 or KN95 masks?</h1>
+    <p style = "font-size: 18px;">Cleanmask.org aggregates DIY filtration-test hardware, as well as testing data of masks at different
         particle size ranges, that aims at informing people about the action of their masks. 
-    <br><br>The website can be used to find the filtration rate of a specific brand of mask. 
+    <br>The website can be used to find the filtration rate of a specific brand of mask. 
         During the Covid19 pandemic, there are many questions from the public as to what masks are </br>trustworthy. 
         Because professional testing labs require much budget and time,
         we would like to show DIY testing results with only a small difference in accuracy.</p>
-    <div class = "container">
-        <div class = "row">
-            <div class = "col">
-                <div class = "p-3 border" style = "height: 200px; background-color: #D3D3D3">
-                    <h3 style="font-size:22px;">Can our data be trusted?</h3>
-                    <p style = "font-size: 18px;"> We have verified that, although our data is not 1 to 1, it is in the same ballpark. 
-                        If you want to see how we researched our data, go to the <a href="./setup">Setup</a> section.</p>
-                </div>
-            </div>
-            <div class = "col">
-                <div class = "p-3 border" style = "height: 200px; background-color: #87ceeb">
-                    <h3 style="font-size:22px;">Fast and easy.</h3>
-                    <p style = "font-size: 18px;">Follow the simple instructions at <a href= "./procedures">Procedure</a>.</p>
-                </div>
-            </div>
-            <div class = "col">
-                <div class = "p-3 border" style = "height: 200px; background-color: #78F0D6">
-                    <h3 style="font-size:22px;">You can contribute.</h3>
-                    <p style = "font-size: 18px;">If you have any other accurate way of researching data regarding the safety of masks, 
-                        you can submit that through the <a href= "./data_input">Data Input</a> section.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-        
-   
-   
-        <hr class = "solid">
-        <h3 style = "font-size: 22px">Contact Information.</h3>
+    <h3 style="font-size:22px;">Can our data be trusted?</h3>
+    <p style = "font-size: 18px;"> We have verified that, although our data is not 1 to 1, it is in the same ballpark. 
+        If you want to see how we researched our data, go to the <a href="./setup">Setup</a> section.</p>
+    <h3 style="font-size:22px;">Fast and easy.</h3>
+    <p style = "font-size: 18px;">Follow the simple instructions at <a href= "./procedures">Procedure</a>.</p>
+    <h3 style="font-size:22px;">You can contribute.</h3>
+    <p style = "font-size: 18px;">If you have any other accurate way of researching data regarding the safety of masks, 
+        you can submit that through the <a href= "./data_input">Data Input</a> section.</p>
+    <h3 style = "font-size: 22px">Contact Information.</h3>
     <p style = "font-size: 18px;">Enze Tian - Graduate at MIT - enzetian@mit.edu</br>
-                                  Minjune Kim - University of California, Berkeley - minjunekim72@gmail.com</br>
+                                  Minjune Kim - Lexington High School - minjunekim72@gmail.com</br>
                                   Thomas Li - Weston Middle School - 25lit@weston.org</p>
+    <picture>
+        <img src= "https://www.linkpicture.com/q/assorted-n95-mask-3992946-300x200.jpg" width = "707" height = "398">
+    </picture>
 </div>
 
         

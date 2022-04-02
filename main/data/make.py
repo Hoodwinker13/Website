@@ -14,8 +14,7 @@ class MakeDB() :
         Make index(Database), if exists delete it
         '''
         params = {
-            'index' : index_name,
-            'body' : {
+            'index': index_name,
                 'settings' : {
                     'number_of_shards' : 5,
                 },
@@ -52,7 +51,6 @@ class MakeDB() :
                         }
                     },
                 },
-            },
         }
 
         if self.es.indices.exists(index=index_name):
@@ -64,21 +62,18 @@ class MakeDB() :
         Make index(Database), if exists delete it
         '''
         params = {
-            'index' : index_name,
-            'body' : {
-                'settings' : {
-                    'number_of_shards' : 5,
-                },
-                'mappings' : {
-                    'mask_completion' : {
-                        'properties' : {
-                            'name' : {'type':'completion'},
-                        }
-                    },
+            'index': index_name,
+            'settings': {
+                'number_of_shards' : 5
+            }, 
+            'mappings': {
+                'mask_completion': {
+                    'properties': {
+                        'name': {'type':'completion'},
+                    }
                 },
             },
         }
-
         if self.es.indices.exists(index=index_name):
             self.es.indices.delete(index=index_name)
         print(self.es.indices.create(**params))

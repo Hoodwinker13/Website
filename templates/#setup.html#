@@ -2,14 +2,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
         <title>Clean Mask</title>
-	
         <style>
             .topnav{
                     overflow:hidden;
-                    background-color: white;
+                    background-color: #010b13;
                     position:sticky;
                     top:0;
                     z-index: 2;
@@ -28,7 +25,7 @@
                 .topnav .texts a{
                     float:left;
                     display:block;
-                    color:black;
+                    color:white;
                     padding:14px 16px;
                     font-size:20px;
                     text-align:center;
@@ -57,13 +54,13 @@
                     margin-top: -2px;
                 }
                 .date{
-                    margin-top:2%;
-                    color:black;
+                    margin-top:50px;
+                    color:white;
                     text-align:right;
                 }
                 .caption{
                     color:white;
-                    font-size:14px;
+                    font-size:20px;
                 }
                 .caption2{
                     color:white;
@@ -77,19 +74,32 @@
                     top:12;
                     z-index: 4;
                 }
+                .image1{
+                    float:left;
+                    color:white;
+                    margin-left:125px;
+                }
+                .image2{
+                    float:right;
+                    color:white;
+                    margin-right:125px;
+                }
                 .text{
                     width: 1000px;
                     float:left;
-                    color:black;
+                    color:white;
                     margin-left:160px;
                     font-size:20px;
                 }
                 .materials{
-                    width: 100%;
+                    width: 1000px;
+                    float:left;
+                    margin-left:160px;
+                    color:white;
                 }
                 .materials a{
                     text-decoration:none; 
-                    color: rgb(107, 120, 238); 
+                    color: lightblue; 
                 }
                 .video video{
                     text-align: center;
@@ -103,59 +113,50 @@
             width:1200px;
             color:white;
         }
-        .container{
-            width: 100%;
-        }
-        </style>
+        </style>bingshiling101
         </head>
-        <body style = "background-color:white;">               
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<nav class = "navbar navbar-expand-lg navbar-light bg-light">
-    <a class = "navbar-brand" href = "./index">Clean Mask</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
-        <ul class = "navbar-nav mr-auto">
-            <li class = "nav-item">
-                <a class = "nav-link" href = "./about">About</a>
-            </li>
-            <li class = "nav-item">
-                <a class = "nav-link" href = "./procedures">Procedure</a>
-            </li>
-            <li class = "nav-item active">
-                <a class = "nav-link" href = "">Setup</a>
-            </li>
-            <li class = "nav-item">
-                <a class = "nav-link" href = "./data">Data</a>
-            </li>
-            <li class = "nav-item">
-                <a class = "nav-link" href = "./data_input">Data Input</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+        <body style = "margin:0px; background-color:#031829;">               
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <div class = "topnav">
+            <div class = "title"><a href = ".\index.html">Clean Mask</a></div>
+            <div class ="texts">
+                    <a href=".\about.html">About</a>
+                    <a href=".\procedures.html">Procedure</a>                    
+                    <a href=".\setup.html" id = "select">Setup</a>
+                    <a href=".\data.html">Data</a>
+        <a href="./data_input">Data Input</a>
+                </div>
+    
+        </div>
         <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
         <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
         <script type="text/javascript" src="{{url_for('static', filename='js/search_out.js')}}"> </script> 
-        <div class = "date"><p style = "margin-right:20px; margin-right: 5%;">(Version: May 9, 2020)</p></div>
-    <div class = "page" style = "margin-left: 5%;">
-    <h2 style = "color: #ae5ac5"><strong>Equipment:</strong></h2>
-    <center><div class = "caption"><p>a) Whole apparutus</p></div><img src="{{url_for('static', filename='img/MaskExperiment1.PNG')}}" alt = "Image for designing experiment" width = 1000>
-<br></center><br>
-<div class = "container">
-    <img src = "{{url_for('static', filename='img/MaskExperiment2.PNG')}}" class = "rounded float-left" alt = "Image for designing experiment" width = 500>
-    <img src = "{{url_for('static', filename='img/MaskExperiment3.PNG')}}" class = "rounded float-right" alt = "Image for designing experiment" width = 500 style = "margin-left: 20%;">     
-</div><br>
-<hr style = "color: #B339D4">
+        <div class= "ui-widget"><input type = "text" id = "name" placeholder="mask name" onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'mask name'"><input type = "submit" id="submit"/></div>
+    <div class = "date"><p style = "margin-right:20px;">(Version: May 9, 2020)</p></div>
+    <center>
+        <div style="width: 1000">
+            <p style = "color:white; font-size:20px;">
+            <left>This document describes the capabilities of the Ju Li’s Lab (in Department of Nuclear Science
+            and Engineering, MIT) to perform tests on    filtration materials/devices (preferably with low air
+            resistance, including HVAC filters, air purifiers, face masks and respirators), for filtration
+            efficiency and pressure drop. </left><br>
+        </p>
+        </div>
+    </center>
+    <h1 style= "color:white; margin-left: 50px;"><strong><em><u>Equipment: </u></em></strong></h1>
+    <center><img src="{{url_for('static', filename='img/MaskExperiment1.PNG')}}" alt = "Image for designing experiment" width = 1000>
+<br><div class = "caption"><p>a) Whole apparutus</p></div></center>
+<center><figure><div class = "image1"><img src = "{{url_for('static', filename='img/MaskExperiment2.PNG')}}" alt = "Image for designing experiment" width = 500><figcaption><p style = "font-size:20px">(b) Filter/mask test</p></figcaption></div></figure>
+
+<figure><div class = "image2"><img src = "{{url_for('static', filename='img/MaskExperiment3.PNG')}}" alt = "Image for designing experiment" width = 500><figcaption><p style = "font-size:20px">(c) Cartridge test</p></figcaption></div></figure></center>  
 <div class = "materials">
-    <h2 style = "color:#B339D4;"><strong>Materials and equipment:</strong></h2>
+    <h1 style = "color:white;"><em><strong><u>Materials:</u></strong></em></h1>
     <div class = "container">
-        <div class = "row">
-            <div class = "col" stlye = "outline=style: solid;">
+        <div class = "row row-cols-2">
+            <div class = "col">
                 <h3>Air duct with driving fan</h3>
                 <ul>
                     <li><a href ="https://www.amazon.com/gp/product/B07SN5PNH3/ref=ox_sc_act_title_1?smid=A3I2VACYSJR5AQ&psc=1"><u>TerraBloom 4" duct fan</u></a></li>
@@ -166,24 +167,7 @@
                 </ul>
             </div>
             <div class = "col">
-                <h3>Pressure drop/airflow rate/temperature/relative humidity measuring</h3>
-                <ul>
-                    <li>Pressure drop
-                        <ul>
-                            <li><a href="https://www.mcmaster.com/4125k21"><u>DWYER 475 differential gauge, 0-4,982kPa</u></a></li>
-                            <li><a href="https://www.mcmaster.com/5234k42-5234K32"><u>Sampling tubing</u></a></li>
-                        </ul>
-                    </li>
-                    <li>Airflow rate/temperature/relative humidity
-                        <ul>
-                            <li><a href="https://www.mcmaster.com/1410k15"><u>EXTECH 45158 mini thermo-anemometer</u></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class = "w-100"></div>
-            <div class = "col">
-                <h3>KCI Particle generator</h3>
+                <h3><strong><em>Particle generator</em></strong> for KCl aerosol with a speed controlled pump (using ambient particles do not need a generator)</h3>
                 <ul>
                     <li><a href="http://chtechusa.com/products_tag_lg_collison-nebulizer.phpBGI"><u> Collision Nebulizer</u></a></li>
                     <li>Peristaltic Pump
@@ -216,22 +200,48 @@
                     </li>
                 </ul>
             </div>
-            
+            <div class = "col">
+                <h3>Pressure drop/airflow rate/temperature/relative humidity measuring</h3>
+                <ul>
+                    <li>Pressure drop
+                        <ul>
+                            <li><a href="https://www.mcmaster.com/4125k21"><u>DWYER 475 differential gauge, 0-4,982kPa</u></a></li>
+                            <li><a href="https://www.mcmaster.com/5234k42-5234K32"><u>Sampling tubing</u></a></li>
+                        </ul>
+                    </li>
+                    <li>Airflow rate/temperature/relative humidity
+                        <ul>
+                            <li><a href="https://www.mcmaster.com/1410k15"><u>EXTECH 45158 mini thermo-anemometer</u></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>    
-<hr style = "color: #B339D4"><h2 style = "color: #B339D4">Demo videos to help you DIY!</h2>
+<div class = "text">
+    <p>
+    <br> 
+    The air duct is designed to test a small-scale purifier developed by our lab and now modified
+    to test small samples of material (50 mm diameter disks), or small air purifier that can build
+    an air-tight connection to the air duct.
+    </p>
+    </div>
+    <br><br><br>
+    <div class = "title">
+    <p style="text-align:center; font-size:28px; margin-left:150px;">Demo Video of Experiments</p>
+    </div>
     <div class = "container">
-        <div class = "row gy-5">
+        <div class = "row">
             <div class = "col">
-                <h2>Part 1: Testing Air Duct</h2>
+                <h2 style="margin-left:200px;">Part 1: Testing Air Duct</h2>
                      <video width="320" height="240" controls>
                         <source src="{{url_for('static', filename='vid/Part1Testingairduct.mp4')}}" type="video/mp4">
                             Your brower does not support the video tag. 
                     </video>
             </div>
             <div class = "col">
-                <h2>Part 2: Filter Installation</h2>
+                <h2 style="margin-left:200px;">Part 2: Filter Installation</h2>
                 <video width="320" height="240" controls>
                     <source src="{{url_for('static', filename='vid/Part2Filterinstallation.mp4')}}" type="video/mp4">
                         Your brower does not support the video tag. 
@@ -240,14 +250,14 @@
         </div>
         <div class = "row">
             <div class = "col">
-                <h2>Part 3: Particle Generation (alternative)</h2>
+                <h2 style="margin-left:200px;">Part 3: Particle Generation (alternative)</h2>
                     <video width="320" height="240" controls>
                         <source src="{{url_for('static', filename='vid/Part3Particlegeneration.mp4')}}" type="video/mp4">
                         Your brower does not support the video tag. 
                     </video>
             </div>
             <div class = "col">
-                <h2>Part 4: Filtration Efficiency</h2>
+                <h2 style="margin-left:200px;">Part 4: Filtration Efficiency</h2>
                 <video width="320" height="240" controls>
                     <source src="{{url_for('static', filename='vid/Part4Efficiencymeasurement.mp4')}}" type="video/mp4">
                         Your brower does not support the video tag. 
@@ -256,14 +266,14 @@
         </div>
         <div class = "row">
             <div class = "col">
-                <h2>Part 5: Pressure Drop Measurement</h2>
+                <h2 style="margin-left:200px;">Part 5: Pressure Drop Measurement</h2>
                     <video width="320" height="240" controls>
                         <source src="{{url_for('static', filename='vid/Part5Pressuredropmeasurement.mp4')}}" type="video/mp4">
                             Your brower does not support the video tag. 
                     </video>
             </div>
             <div class = "col">
-                <h2>Part 6: Air Property & Velocity Measurement</h2>
+                <h2 style="margin-left:200px;">Part 6: Air Property & Velocity Measurement</h2>
                 <video width="320" height="240" controls>
                     <source src="{{url_for('static', filename='vid/Part6Airpropertymeasurement.mp4')}}" type="video/mp4">
                         Your brower does not support the video tag. 
@@ -272,7 +282,7 @@
         </div>
         <div class = "row">
             <div class = "col">
-                <h2 style = "color: #B339D4">Part 7: Whole Testing Process Example</h2>
+                <h2 style="margin-left:200px;">Part 7: Whole Testing Process Example</h2>
                 <video width="320" height="240" controls>
                     <source src="{{url_for('static', filename='vid/Part7Wholetestingprocessexample.mp4')}}" type="video/mp4">
                         Your brower does not support the video tag. 
@@ -280,7 +290,6 @@
             </div>
         </div>
     </div>
-</div>
     </body>
 
 </html>
